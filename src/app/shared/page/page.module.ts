@@ -2,13 +2,15 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NavbarComponent } from '../../components/navbar/navbar.component';
 import { ContainerMainComponent } from '../../components/container-main/container-main.component';
+import { ContainerSmallComponent } from '../../components/container-small/container-small.component';
 
 
 
 @NgModule({
   declarations: [
     NavbarComponent,
-    ContainerMainComponent
+    ContainerMainComponent,
+    ContainerSmallComponent
   ],
   imports: [
     CommonModule,
@@ -16,7 +18,8 @@ import { ContainerMainComponent } from '../../components/container-main/containe
   ],
   exports: [
     NavbarComponent,
-    ContainerMainComponent
+    ContainerMainComponent,
+    ContainerSmallComponent
   ]
 })
 export class PageModule { }
