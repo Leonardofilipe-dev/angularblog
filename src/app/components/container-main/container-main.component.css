@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.container-main {
+    display: flex;
+    align-items: center;
+    position: relative;
+    min-height: 50vh;
+    padding: 20px;
+    text-align: center;
+    background-color: #777777;
+    color: #ebebeb;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    flex-direction: column; /* Organiza o conteúdo verticalmente */
+    justify-content: center; /* Alinha os elementos no centro */
+}
+
+.slider-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.left-arrow {
+    left: 10px;
+}
+
+.right-arrow {
+    right: 10px;
+}
+
+.arrow:hover {
+    background-color: #555;
+}
+
+.btn {
+    margin-top: 20px; /* Adiciona um espaço acima do botão */
+    z-index: 5; /* Garante que o botão esteja acima do conteúdo */
+}

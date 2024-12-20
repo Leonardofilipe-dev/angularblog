@@ -1,1 +1,11 @@
-<p>container-main works!</p>
+<div class="container-main">
+    <button class="arrow left-arrow" (click)="navigate('left')">&lt;</button>
+    <div class="slider-content">
+        <h1>{{ titles[currentIndex] }}</h1>
+        <div>
+            <p>{{ descriptions[currentIndex] }}</p>
+        </div>
+    </div>
+    <button class="arrow right-arrow" (click)="navigate('right')">&gt;</button>
+    <button type="button" class="btn btn-primary">Primary</button>
+</div>

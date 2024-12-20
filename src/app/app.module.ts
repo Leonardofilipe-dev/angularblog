@@ -15,16 +15,12 @@ import { PageModule } from './shared/page/page.module';
 @NgModule({
   declarations: [
     AppComponent,
-    ContainerMainComponent,
-    ContainerSmallComponent,
-    FooterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     //Declarando o modulo
     PageModule
-  
     
 
   ],
