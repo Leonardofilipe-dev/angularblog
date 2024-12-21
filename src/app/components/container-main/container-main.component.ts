@@ -1,24 +1,30 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-container-main',
   templateUrl: './container-main.component.html',
-  styleUrl: './container-main.component.css'
+  styleUrls: ['./container-main.component.css']
 })
-export class ContainerMainComponent {
-  titles = ['Manchete numero 1', 'Manchete numero 2', 'Manchete numero 3'];
-  descriptions = [
-    'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-    'Dolor Sit Amet has been the industry\'s standard dummy text.',
-    'Consectetur Adipiscing is used by designers to focus on layout and content.'
+export class ContainerMainComponent implements OnInit {
+  images = [
+    'https://cdn.pixabay.com/photo/2024/05/30/12/23/pool-8798432_1280.jpg',
+    'https://cdn.pixabay.com/photo/2024/03/01/07/55/apartment-8605862_1280.jpg',
+    'https://cdn.pixabay.com/photo/2024/08/04/08/13/ai-generated-8943814_1280.jpg'
   ];
   currentIndex = 0;
+
+  ngOnInit(): void {
+    setInterval(() => this.navigate('right'), 5000); 
+  }
 
   navigate(direction: 'left' | 'right'): void {
     if (direction === 'left' && this.currentIndex > 0) {
       this.currentIndex--;
-    } else if (direction === 'right' && this.currentIndex < this.titles.length - 1) {
+    } else if (direction === 'right' && this.currentIndex < this.images.length - 1) {
       this.currentIndex++;
+    } else if (direction === 'right') {
+      this.currentIndex = 0; // Retorna ao início do slide
     }
   }
+
 }
