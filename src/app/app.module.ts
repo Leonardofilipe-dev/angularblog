@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
 // import { ContainerMainComponent } from './components/container-main/container-main.component';
 // import { ContainerSmallComponent } from './components/container-small/container-small.component';
 // import { FooterComponent } from './components/footer/footer.component';
@@ -10,6 +11,7 @@ import { AppComponent } from './app.component';
 
 import { PageModule } from './shared/page/page.module';
 import { HomeComponent } from './components/home/home.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -24,7 +26,9 @@ import { HomeComponent } from './components/home/home.component';
     BrowserModule,
     AppRoutingModule,
     //Declarando o modulo
-    PageModule
+    PageModule,
+    HttpClientModule
+
     
 
   ],
