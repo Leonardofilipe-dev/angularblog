@@ -4,6 +4,7 @@ import { NavbarComponent } from '../../components/navbar/navbar.component';
 import { ContainerMainComponent } from '../../components/container-main/container-main.component';
 import { ContainerSmallComponent } from '../../components/container-small/container-small.component';
 import { ContainerMapComponent } from '../../components/container-map/container-map.component';
+import { FooterComponent } from '../../components/footer/footer.component';
 
 
 
@@ -12,7 +13,8 @@ import { ContainerMapComponent } from '../../components/container-map/container-
     NavbarComponent,
     ContainerMainComponent,
     ContainerSmallComponent,
-    ContainerMapComponent
+    ContainerMapComponent,
+    FooterComponent
   ],
   imports: [
     CommonModule,
@@ -22,7 +24,8 @@ import { ContainerMapComponent } from '../../components/container-map/container-
     NavbarComponent,
     ContainerMainComponent,
     ContainerSmallComponent,
-    ContainerMapComponent
+    ContainerMapComponent,
+    FooterComponent
   ]
 })
 export class PageModule { }
