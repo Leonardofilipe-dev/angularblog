@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { NavbarComponent } from '../../components/navbar/navbar.component';
 import { ContainerMainComponent } from '../../components/container-main/container-main.component';
 import { ContainerSmallComponent } from '../../components/container-small/container-small.component';
+import { ContainerMapComponent } from '../../components/container-map/container-map.component';
 
 
 
@@ -10,7 +11,8 @@ import { ContainerSmallComponent } from '../../components/container-small/contai
   declarations: [
     NavbarComponent,
     ContainerMainComponent,
-    ContainerSmallComponent
+    ContainerSmallComponent,
+    ContainerMapComponent
   ],
   imports: [
     CommonModule,
@@ -19,7 +21,8 @@ import { ContainerSmallComponent } from '../../components/container-small/contai
   exports: [
     NavbarComponent,
     ContainerMainComponent,
-    ContainerSmallComponent
+    ContainerSmallComponent,
+    ContainerMapComponent
   ]
 })
 export class PageModule { }
