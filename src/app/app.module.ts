@@ -12,6 +12,9 @@ import { AppComponent } from './app.component';
 import { PageModule } from './shared/page/page.module';
 import { HomeComponent } from './components/home/home.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ContentComponent } from './pages/content/content.component';
+import { WorkUsComponent } from './pages/work-us/work-us.component';
+
 
 
 
@@ -20,6 +23,9 @@ import { HttpClientModule } from '@angular/common/http';
   declarations: [
     AppComponent,
     HomeComponent,
+    ContentComponent,
+    WorkUsComponent,
+
   
   ],
   imports: [

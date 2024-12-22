@@ -1,0 +1,7 @@
+.container-anexar-curriculo {
+    margin-top: 20px;
+}
+
+form input[type="file"] {
+    max-width: 300px;
+}

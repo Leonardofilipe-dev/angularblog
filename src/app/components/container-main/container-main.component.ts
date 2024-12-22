@@ -10,6 +10,7 @@ export class ContainerMainComponent implements OnInit {
     'https://cdn.pixabay.com/photo/2023/05/27/19/15/call-center-8022155_1280.jpg',
     'https://cdn.pixabay.com/photo/2024/03/01/07/55/apartment-8605862_1280.jpg',
     'https://cdn.pixabay.com/photo/2024/08/04/08/13/ai-generated-8943814_1280.jpg'
+    
   ];
   currentIndex = 0;
 
