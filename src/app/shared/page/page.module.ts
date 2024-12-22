@@ -14,7 +14,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
     ContainerMainComponent,
     ContainerSmallComponent,
     ContainerMapComponent,
-    FooterComponent
+    FooterComponent,
   ],
   imports: [
     CommonModule,

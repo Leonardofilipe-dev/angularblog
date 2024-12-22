@@ -1,0 +1,92 @@
+<app-navbar></app-navbar>
+
+<div class="container mt-5">
+    <h1 class="text-center mb-4">Faça sua Reserva</h1>
+    <form>
+      
+      <div class="mb-3">
+        <label for="nome" class="form-label">Nome Completo</label>
+        <input 
+          type="text" 
+          class="form-control" 
+          id="nome" 
+          placeholder="Digite seu nome completo" 
+          required>
+      </div>
+  
+      
+      <div class="mb-3">
+        <label for="email" class="form-label">E-mail</label>
+        <input 
+          type="email" 
+          class="form-control" 
+          id="email" 
+          placeholder="Digite seu e-mail" 
+          required>
+      </div>
+  
+      
+      <div class="mb-3">
+        <label for="telefone" class="form-label">Telefone</label>
+        <input 
+          type="tel" 
+          class="form-control" 
+          id="telefone" 
+          placeholder="(XX) XXXXX-XXXX" 
+          required>
+      </div>
+  
+      
+      <div class="mb-3">
+        <label for="checkin" class="form-label">Data de Check-in</label>
+        <input 
+          type="date" 
+          class="form-control" 
+          id="checkin" 
+          required>
+      </div>
+  
+      
+      <div class="mb-3">
+        <label for="checkout" class="form-label">Data de Check-out</label>
+        <input 
+          type="date" 
+          class="form-control" 
+          id="checkout" 
+          required>
+      </div>
+  
+      
+      <div class="mb-3">
+        <label for="tipoQuarto" class="form-label">Tipo de Quarto</label>
+        <select class="form-select" id="tipoQuarto" required>
+          <option value="">Selecione uma opção</option>
+          <option value="single">Single</option>
+          <option value="double">Double</option>
+          <option value="suite">Suite</option>
+        </select>
+      </div>
+  
+      
+      <div class="mb-3">
+        <label for="observacoes" class="form-label">Observações</label>
+        <textarea 
+          class="form-control" 
+          id="observacoes" 
+          rows="3" 
+          placeholder="Escreva alguma observação (opcional)"></textarea>
+      </div>
+  
+      
+      <button type="submit" class="btn btn-primary w-100">Enviar Reserva</button>
+    </form>
+  </div>
+  <div class="footer">
+    <app-footer></app-footer>
+  </div>
+  
+
+  
+
+
+  
